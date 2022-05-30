@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/anthonybartholomew.com/static/css/main.4b654c6c.css",
+    "main.js": "/anthonybartholomew.com/static/js/main.51c71021.js",
+    "index.html": "/anthonybartholomew.com/index.html",
+    "main.4b654c6c.css.map": "/anthonybartholomew.com/static/css/main.4b654c6c.css.map",
+    "main.51c71021.js.map": "/anthonybartholomew.com/static/js/main.51c71021.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4b654c6c.css",
+    "static/js/main.51c71021.js"
+  ]
+}
