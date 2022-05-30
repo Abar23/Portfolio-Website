@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --color-black: #040b14;
+  --color-light-black: #212431;
+  --color-navy-blue: #173b6c;
+  --color-light-blue: #149ddd;
+  --color-white: #fff;
+  --color-grey: #999999;
+  --color-light-grey: #2c2f3f;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body { 
+  font-family: "Roboto Slab", sans-serif;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a { 
+  text-decoration: none;
+}
+
+.home {
+  color: #173b6c;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  font-size: 32px;
+  font-weight: bold;
+  border-top: 10px solid #149ddd;
+  border-bottom: 10px solid #149ddd;
+}
+
+.about {
+  color: #173b6c;
+  display: grid;
+  place-items: center;
+  height: 40vh;
+  font-size: 32px;
+  font-weight: bold;
+  border-top: 10px solid #149ddd;
+  border-bottom: 10px solid #149ddd;
+}
+
+.section {
+  color: #173b6c;
+  display: grid;
+  place-items: center;
+  height: 60vh;
+  font-size: 32px;
+  font-weight: bold;
+  border-top: 10px solid #149ddd;
+  border-bottom: 10px solid #149ddd;
+}
+
+.projects {
+  color: #173b6c;
+  display: grid;
+  place-items: center;
+  height: 80vh;
+  font-size: 32px;
+  font-weight: bold;
+  border-top: 10px solid #149ddd;
+  border-bottom: 10px solid #149ddd;
+}
+
+.connect {
+  color: #173b6c;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  font-size: 32px;
+  font-weight: bold;
+  border-top: 10px solid #149ddd;
+  border-bottom: 10px solid #149ddd;
+}
