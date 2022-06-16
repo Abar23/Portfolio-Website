@@ -4,5 +4,6 @@ import { Resume } from './Resume';
 import { NotFound } from './NotFound';
 import { Contact } from './Contact'
 import { Footer } from './Footer'
+import { ScrollToTopButton } from './ScrollToTopButton';
 
-export { Navbar, Home, Resume, NotFound, Contact, Footer }
+export { Navbar, Home, Resume, NotFound, Contact, Footer, ScrollToTopButton }

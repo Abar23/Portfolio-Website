@@ -1,7 +1,7 @@
 import React, { createRef, useState } from "react";
 import { Navbar, Home, Resume, NotFound } from './Components/Components'
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
-import Documents from './Constants/Documents';
+import { ScrollToTopButton } from './Components/Components';
 import './App.css';
 
 function App() {
@@ -45,6 +45,7 @@ function App() {
                 <Route path='/resume' element={<Resume setViewingResume={setViewingResume} />} />
                 <Route path='*' element={<NotFound setViewingResume={setViewingResume} />} />
             </Routes>
+            <ScrollToTopButton />
         </Router>
     );
 }

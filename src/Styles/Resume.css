@@ -150,9 +150,18 @@
     font-size: 20px;
     text-indent: -20px;
     margin-left: 20px;
+    color: var(--color-white);
 }
 
 .resume-info-section-list > li:before {
     color: var(--color-white);
     content: "– ";
+}
+
+@media screen and (max-width: 1300px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
 }
