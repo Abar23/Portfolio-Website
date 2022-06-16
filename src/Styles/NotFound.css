@@ -1,0 +1,40 @@
+.not-found {
+    height: 100vh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.not-found-header h1 {
+    font-size: 200px;
+    text-decoration: underline;
+    text-decoration-color: var(--color-light-blue);
+}
+
+.not-found-text p {
+    font-size: 30px;
+    text-align: center;
+}
+
+@media screen and (max-width: 1300px) {
+    .not-found-header h1 {
+        font-size: 150px;
+    }
+    
+    .not-found-text p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .not-found-header h1 {
+        font-size: 100px;
+    }
+    
+    .not-found-text p {
+        font-size: 15px;
+    }
+}

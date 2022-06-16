@@ -1,0 +1,28 @@
+.footer-container-inner {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.footer {
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer p {
+    font-size: 13px;
+    color: var(--color-grey);
+}
+
+@media screen and (max-width: 1300px) {
+    .footer p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer p {
+        font-size: 9px;
+    }
+}
