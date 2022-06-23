@@ -1,10 +1,10 @@
 .scroll-to-top-button {
     position: fixed;
-    right: 15px;
-    bottom: 15px;
-    width: 50px;
-    height: 50px;
-    font-size: 50px;
+    right: 35px;
+    bottom: 35px;
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
     border-radius: 8px;
     background-color: var(--color-grey);
     border: none;
@@ -33,4 +33,11 @@
 
 .scroll-button-animate-show:hover > svg{
     color: var(--color-light-blue);
+}
+
+@media screen and (max-width: 1024px) {
+    .scroll-to-top-button {
+        right: 15px;
+        bottom: 15px;
+    }
 }

@@ -1,20 +1,18 @@
 import React, { useEffect } from "react";
 import { Element } from 'react-scroll';
 import { Contact, Footer } from './Components';
+import { motion } from "framer-motion";
 
 export const Home = React.forwardRef((props, refs) => {
 
     function scrollToElementInstantly(ref) {
         window.scrollTo({
-            top: ref.current.offsetTop - props.elementScrollData.offset,
+            top: ref.current.offsetTop,
             left: 0,
             behavior: 'instant'
         });
 
-        props.setElementScrollData({
-            element: null,
-            offset: 0
-        });
+        props.setElementScrollData({ element: null });
     }
 
     useEffect(() => {
@@ -28,7 +26,6 @@ export const Home = React.forwardRef((props, refs) => {
 
         switch (props.elementScrollData.element) {
             case 'home':
-                console.log(props.elementScrollData)
                 scrollToElementInstantly(refs[0]);
                 break;
 
@@ -56,7 +53,11 @@ export const Home = React.forwardRef((props, refs) => {
     }, [refs, props])
 
     return (
-        <div>
+        <motion.div
+            initial={{translateX: "-100vw", opacity: 0}}
+            animate={{translateX: 0, opacity: 1 , transition:{ type: "tween"}}}
+            exit={{translateX: "-100vw", opacity: 0, transition:{ type: "tween"}}}
+        >
             <Element>
                 <div className='home' ref={refs[0]}>
                     Hi
@@ -76,6 +77,6 @@ export const Home = React.forwardRef((props, refs) => {
                 <Contact ref={refs[3]}/>
             </Element>
             <Footer/>
-        </div>
+        </motion.div>
     )
 })

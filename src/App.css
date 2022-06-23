@@ -148,6 +148,7 @@ p {
     font-weight: bold;
     border-top: 10px solid #149ddd;
     border-bottom: 10px solid #149ddd;
+    background-color: white;
 }
 
 .about {

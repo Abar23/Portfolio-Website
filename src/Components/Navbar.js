@@ -46,21 +46,35 @@ export const Navbar = (props) => {
     }
 
     const handleHomeViewTransition = (event) => {
-        homeViewTransition(event, 90);
+        homeViewTransition(event);
     }
 
     const handleMobileHomeViewTransition = (event) => {
-        homeViewTransition(event, 0);
+        homeViewTransition(event);
         handleMobileToggle();
     }
 
-    const homeViewTransition = (event, offset) => {
+    const homeViewTransition = (event) => {
         props.setViewingResume(false);
         props.setElementScrollData({
-            element: event.target.childNodes[0].data.toLowerCase(),
-            offset: offset
+            element: event.target.childNodes[0].data.toLowerCase()
         });
         window.document.body.style.overflow = "auto";
+    }
+
+    const handleLogoClick = () => {
+        if(mobileNavbar) {
+            handleMobileToggle();
+        }
+
+        if(props.viewingResume) {
+            props.setViewingResume(false);
+        } else {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });        
+        }
     }
 
     useEffect(() => {
@@ -75,7 +89,7 @@ export const Navbar = (props) => {
         <div className='navbar-header'>
             <div className='navbar-header-inner'>
                 <div className='navbar'>
-                    <RouterLink to='/' className='p-nav-link-text' onClick={handleResumeView}>
+                    <RouterLink to='/' className='p-nav-link-text' onClick={handleLogoClick}>
                         <div className='navbar-logo'>
                             <h3 className='navbar-logo-name'>Anthony Bartholomew</h3>
                             <p className='navbar-logo-subtext'>Full Stack, Graphics, Game Programmer</p>
