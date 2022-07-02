@@ -5,6 +5,7 @@ import { VscFilePdf } from 'react-icons/vsc';
 import { FaUniversity } from 'react-icons/fa';
 import { MdWork } from 'react-icons/md';
 import { BsAwardFill, BsGearFill } from 'react-icons/bs';
+import { motion } from "framer-motion";
 import Svg from '../Constants/Svg';
 import '../Styles/Resume.css';
 
@@ -32,7 +33,11 @@ export const Resume = (props) => {
     }, [props]);
 
     return (
-        <>
+        <motion.div
+            initial={{translateX: "100vw", opacity: 0}}
+            animate={{translateX: 0, opacity: 1 , transition:{ type: "tween"}}}
+            exit={{translateX: "100vw", opacity: 0, transition:{ type: "tween"}}}
+        >
             <div className='contact container background-light-grey'>
                 <div className='container-inner'>
                     <div className='resume-margin-separation'>
@@ -298,6 +303,6 @@ export const Resume = (props) => {
             </div>
             <Contact />
             <Footer />
-        </>
+        </motion.div>
     )
 }
