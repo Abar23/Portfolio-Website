@@ -55,16 +55,16 @@
 }
 
 .resume-logo-grid {
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    width: fit-content;
+    justify-content:center;
     gap: 50px;
 }
 
 .resume-logo-grid > svg {
-    width: 90px;
+    width: 100px;
 }
 
 .resume-skills-section-title {
@@ -78,13 +78,16 @@
 }
 
 .resume-skills-fieldset {
-    display: inline;
+    width: 100;
+    display: flex;
+    justify-content: center;    
+    flex-grow: 1;
     border-top: 3px;
     border-bottom: 0px;
     border-left: 0px;
     border-right: 0px;
     border-style: solid;
-    padding: 30px 60px;
+    padding: 30px 30px;
     margin: 10px 20px 20px 20px;
 }
 
@@ -159,7 +162,46 @@
 }
 
 @media screen and (max-width: 1300px) {
+    .resume-download-button-contents svg {
+        font-size: 30px;
+     }
+     
+     .resume-download-button-contents span {
+         font-size: 20px;
+      }
 
+      .resume-download {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .resume-skills-section-title {
+        font-size: 30px;
+    }
+    
+    .resume-skills-section-title h3{
+        font-size: 25px;
+    }
+
+    .lower-section-title {
+        gap: 10px;
+        font-size: 44px;
+    }
+
+    .resume-info-section-list li {
+        font-size: 20px;
+    }
+
+    /* good below */
+    .resume-skills {
+    }
+
+    .resume-skills-fieldset {
+
+    }
+
+    .resume-logo-grid {
+    }
 }
 
 @media screen and (max-width: 768px) {
