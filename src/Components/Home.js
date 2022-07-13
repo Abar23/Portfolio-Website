@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Element } from 'react-scroll';
-import { Contact, Footer } from './Components';
+import { Contact, Footer, About } from './Components';
 import { motion } from "framer-motion";
 
 export const Home = React.forwardRef((props, refs) => {
@@ -64,9 +64,7 @@ export const Home = React.forwardRef((props, refs) => {
                 </div>
             </Element>
             <Element>
-                <div className='about' ref={refs[1]}>
-                    About
-                </div>
+                <About ref={refs[1]}/>
             </Element>
             <Element>
                 <div className='projects' ref={refs[2]}>

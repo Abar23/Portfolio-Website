@@ -1,0 +1,17 @@
+.about-container-inner-border-style::before {
+    content: "";
+    position: absolue;
+    display: block;
+    width: 100%;
+    margin-bottom: 70px;
+    border-top: 3px solid #149ddd;
+}
+
+.about-container-inner-border-style::after {
+    content: "";
+    position: absolue;
+    display: block;
+    width: 100%;
+    margin-top: 70px;
+    border-top: 3px solid #149ddd;
+} 

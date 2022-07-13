@@ -10,7 +10,7 @@ export const Contact = React.forwardRef((props, refs) => {
         <div className='contact container background-light-black' ref={refs}>
             <div className='container-inner'>
                 <div className='section-title align-to-center'>
-                    <h2>Contact me</h2>
+                    <h2>Contact Me</h2>
                 </div>
                 <div className='contact-description align-to-center'>
                     <p className='center-text'>

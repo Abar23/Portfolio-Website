@@ -1,24 +1,32 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { MdKeyboardArrowUp } from 'react-icons/md'
 import '../Styles/ScrollToTopButton.css';
 
 export const ScrollToTopButton = () => {
-    const [scrollButtonVisibility, setscrollButtonVisibility] = useState();
+
+    const scrollToTopButton = useRef();
+    
+    const [scrollButtonVisibility, setscrollButtonVisibility] = useState(null);
 
     const toggleScrollButtonVisibility = () => {
         let scrollYOffset = window.document.documentElement.scrollTop;
         if (scrollYOffset > 300) {
-            setscrollButtonVisibility(true);
+            setscrollButtonVisibility(true); 
         } else {
             setscrollButtonVisibility(false);
+            scrollToTopButton.current.disabled = false;
         }
     }
 
     const scrollToTop = () => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
+        if(!scrollToTopButton.current.disabled)
+        {
+            scrollToTopButton.current.disabled = true;
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
     }
 
     useEffect(() => {
@@ -30,7 +38,7 @@ export const ScrollToTopButton = () => {
     }, []);
 
     return (
-        <button className={'scroll-to-top-button ' + (scrollButtonVisibility ? 'scroll-button-animate-show' : 'scroll-button-animate-hide')} onClick={scrollToTop}>
+        <button className={'scroll-to-top-button ' + (scrollButtonVisibility ? 'scroll-button-animate-show' : 'scroll-button-animate-hide')} onClick={scrollToTop} ref={scrollToTopButton}>
             <MdKeyboardArrowUp />
         </button>
     )

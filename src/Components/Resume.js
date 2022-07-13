@@ -177,7 +177,7 @@ export const Resume = (props) => {
                                             <p>Columbus, Ohio</p>
                                             <p>Aug 2014 - Dec 2019</p>
                                         </div>
-                                        <p>B.S. in Computer Science and Engineerin specializing in Computer Graphics and Game Design - Cum Laude</p>
+                                        <p>B.S. in Computer Science and Engineering specializing in Computer Graphics and Game Design - Cum Laude</p>
                                     </div>
                                 </div>
                             </div>
