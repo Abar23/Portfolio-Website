@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.b56cb672.css",
-    "main.js": "/static/js/main.86078057.js",
+    "main.css": "/static/css/main.58689dc7.css",
+    "main.js": "/static/js/main.364c3278.js",
     "static/media/Anthony Bartholomew Resume.pdf": "/static/media/Anthony Bartholomew Resume.539e91efe5f42a34deb8.pdf",
     "index.html": "/index.html",
-    "main.b56cb672.css.map": "/static/css/main.b56cb672.css.map",
-    "main.86078057.js.map": "/static/js/main.86078057.js.map"
+    "main.58689dc7.css.map": "/static/css/main.58689dc7.css.map",
+    "main.364c3278.js.map": "/static/js/main.364c3278.js.map"
   },
   "entrypoints": [
-    "static/css/main.b56cb672.css",
-    "static/js/main.86078057.js"
+    "static/css/main.58689dc7.css",
+    "static/js/main.364c3278.js"
   ]
 }
