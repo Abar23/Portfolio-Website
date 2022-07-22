@@ -13,7 +13,7 @@ function App() {
         <Router>
             <Navbar viewingResume={viewingResume} setViewingResume={setViewingResume} setElementScrollData={setElementScrollData} />
             <div className="background-light-grey">
-                <AnimatedRoutes setViewingResume={setViewingResume} setElementScrollData={setElementScrollData} elementScrollData={elementScrollData}/>
+                <AnimatedRoutes setViewingResume={setViewingResume} setElementScrollData={setElementScrollData} elementScrollData={elementScrollData} />
             </div>
             <ScrollToTopButton />
         </Router>

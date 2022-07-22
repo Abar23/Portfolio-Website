@@ -3,7 +3,7 @@
     position: absolue;
     display: block;
     width: 100%;
-    margin-bottom: 70px;
+    margin-bottom: 30px;
     border-top: 3px solid #149ddd;
 }
 
@@ -12,6 +12,6 @@
     position: absolue;
     display: block;
     width: 100%;
-    margin-top: 70px;
+    margin-top: 40px;
     border-top: 3px solid #149ddd;
 } 

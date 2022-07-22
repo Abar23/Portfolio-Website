@@ -25,6 +25,7 @@ export const NotFound = (props) => {
     return () => {
       props.setViewingResume(false);
       window.document.body.style.overflow = 'auto';
+      clearTimeout(redirectToHome);
     };
   }, []);
 

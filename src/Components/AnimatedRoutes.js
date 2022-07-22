@@ -1,9 +1,9 @@
 import React, { createRef } from "react";
 import { Routes, Route, useLocation } from 'react-router-dom';
-import { Home, Resume, NotFound } from './Components';
+import { MainPage, Resume, NotFound, PortalMario } from './Components';
 import { AnimatePresence } from 'framer-motion'
 
-export const AnimatedRoutes = React.forwardRef((props, refs) => {
+export const AnimatedRoutes = (props) => {
 
     const references = [];
 
@@ -31,17 +31,18 @@ export const AnimatedRoutes = React.forwardRef((props, refs) => {
     }
 
     const options = {
-        threshold: 0.008,
-        rootMargin: "-58% 0px -41% 0px"
+        threshold: 0.0,
+        rootMargin: "-58.99% 0px -41% 0px"
     }
 
     return (
-        <AnimatePresence exitBeforeEnter>
+        <AnimatePresence initial={false} exitBeforeEnter>
             <Routes location={location} key={location.pathname}>
-                <Route path='/' element={<Home options={options} callback={callback} ref={[newRef(), newRef(), newRef(), newRef()]} setElementScrollData={props.setElementScrollData} elementScrollData={props.elementScrollData} />} />
+                <Route path='/' element={<MainPage options={options} callback={callback} ref={[newRef(), newRef(), newRef(), newRef()]} setElementScrollData={props.setElementScrollData} elementScrollData={props.elementScrollData} />} />
                 <Route path='/resume' element={<Resume setViewingResume={props.setViewingResume} />} />
+                <Route path='/portal-mario' element={<PortalMario setViewingResume={props.setViewingResume} />} />
                 <Route path='*' element={<NotFound setViewingResume={props.setViewingResume} />} />
             </Routes>
         </AnimatePresence>
     )
-})
+}

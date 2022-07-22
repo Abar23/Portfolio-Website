@@ -29,18 +29,6 @@ export const Navbar = (props) => {
         }
     }
 
-    const handleMobileResize = () => {
-        if (window.innerWidth > 1024) {
-            window.document.body.style.overflow = "auto";
-
-            setMobileNavbar(false);
-
-            let mobileNavOverlay = window.document.querySelector('.navbar-smallscreen-overlay');
-            mobileNavOverlay.classList.remove('show');
-            mobileNavOverlay.classList.add('animated-hide');
-        }
-    }
-
     const handleResumeView = () => {
         props.setViewingResume(true);
     }
@@ -78,6 +66,18 @@ export const Navbar = (props) => {
     }
 
     useEffect(() => {
+        const handleMobileResize = () => {
+            if (window.innerWidth > 1024) {
+                window.document.body.style.overflow = "auto";
+    
+                setMobileNavbar(false);
+    
+                let mobileNavOverlay = window.document.querySelector('.navbar-smallscreen-overlay');
+                mobileNavOverlay.classList.remove('show');
+                mobileNavOverlay.classList.add('animated-hide');
+            }
+        }
+        
         window.addEventListener("resize", handleMobileResize);
 
         return () => {

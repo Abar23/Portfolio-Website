@@ -1,19 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
-    --color-black: #040b14;
-    --color-light-black: #212431;
-    --color-navy-blue: #173b6c;
-    --color-light-blue: #149ddd;
-    --color-white: #fff;
-    --color-grey: #999999;
+    --color-black: rgb(0, 0, 0);
+    --color-light-black: rgb(33, 36, 49);
+    --color-navy-blue: rgb(23, 59, 108);
+    --color-light-blue: rgb(20, 157, 221);
+    --color-white: rgb(255, 255, 255);
+    --color-grey: rgb(153, 153, 153);
     --color-light-grey: #2c2f3f;
-    --color-powder-blue: #B6D0E2;
-    --color-pastel-teal: #11A9A8;
-    --color-pastel-purple: #9A7FAE;
-    --color-pastel-orange: #FBBB62;
-    --color-pastel-green: #9ECB91;
-    --color-pastel-red: #D26466;
+    --color-powder-blue: rgb(182, 208, 226);
+    --color-pastel-teal: rgb(17, 169, 168);
+    --color-pastel-purple: rgb(154, 127, 174);
+    --color-pastel-orange: rgb(238, 158, 45);
+    --color-pastel-green: rgb(158, 203, 145);
+    --color-pastel-red: rgb(210, 100, 102);
 }
 
 * {
@@ -69,7 +69,7 @@ a {
 }
 
 .background-pastel-orange {
-    background-color: var(--color-pastel-ornage);
+    background-color: var(--color-pastel-orange);
 }
 
 .background-pastel-red {
@@ -78,10 +78,6 @@ a {
 
 .background-pastel-green {
     background-color: var(--color-pastel-green);
-}
-
-.background-pastel-orange {
-    background-color: var(--color-pastel-orange);
 }
 
 .p-nav-link-text {
@@ -112,11 +108,10 @@ h1, h2, h3, h4, h5, p {
 
 .section-title h2 {
     font-size: 44px;
-    font-weight: bold;
 }
 
-p { 
-    font-size: 20px;
+.section-title h3 {
+    font-size: 30px;
 }
 
 .pastel-teal-border {
@@ -137,34 +132,6 @@ p {
 
 .pastel-red-border {
     border-color: var(--color-pastel-red);
-}
-
-.home {
-    color: #173b6c;
-    display: grid;
-    place-items: center;
-    height: 100vh;
-    font-size: 32px;
-    font-weight: bold;
-    background-color: white;
-}
-
-.section {
-    color: #173b6c;
-    display: grid;
-    place-items: center;
-    height: 60vh;
-    font-size: 32px;
-    font-weight: bold;
-}
-
-.projects {
-    color: #173b6c;
-    display: grid;
-    place-items: center;
-    height: 80vh;
-    font-size: 32px;
-    font-weight: bold;
 }
 
 @media screen and (max-width: 1024px) {

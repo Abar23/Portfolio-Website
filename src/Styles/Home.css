@@ -1,0 +1,27 @@
+.home-content {
+    height: 100vh;
+}
+
+.home-description {
+    position: absolute;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    bottom: 200px;
+}
+
+.home-description-typing-info {
+    color: var(--color-white);
+    font-size: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+.Typewriter__wrapper {
+    font-weight: bold;
+    border-bottom: 3px solid var(--color-light-blue);
+}
+
+.Typewriter__cursor {
+    color: var(--color-white);
+}

@@ -42,7 +42,6 @@
 .navbar-links li:hover {
     color: var(--color-white);
     transition: .5s ease-in;
-    border-bottom: 4px solid #149ddd;
 }
 
 .activeClass {

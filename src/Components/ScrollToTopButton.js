@@ -14,19 +14,14 @@ export const ScrollToTopButton = () => {
             setscrollButtonVisibility(true); 
         } else {
             setscrollButtonVisibility(false);
-            scrollToTopButton.current.disabled = false;
         }
     }
 
     const scrollToTop = () => {
-        if(!scrollToTopButton.current.disabled)
-        {
-            scrollToTopButton.current.disabled = true;
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        }
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
     }
 
     useEffect(() => {
