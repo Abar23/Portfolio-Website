@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.ce9eb5cf.css",
+    "main.css": "/static/css/main.6d1ae422.css",
     "main.js": "/static/js/main.49d6de21.js",
     "static/media/Professional Photo.png": "/static/media/Professional Photo.c53bb3e54634ad910826.png",
     "static/media/MandelBulb.png": "/static/media/MandelBulb.9d6c75bd95a2b73e0289.png",
@@ -10,11 +10,11 @@
     "static/media/Dungeons Of Avarice.png": "/static/media/Dungeons Of Avarice.47d3f9ca725541b44779.png",
     "static/media/Portal Mario.png": "/static/media/Portal Mario.96913ab85d286016589e.png",
     "index.html": "/index.html",
-    "main.ce9eb5cf.css.map": "/static/css/main.ce9eb5cf.css.map",
+    "main.6d1ae422.css.map": "/static/css/main.6d1ae422.css.map",
     "main.49d6de21.js.map": "/static/js/main.49d6de21.js.map"
   },
   "entrypoints": [
-    "static/css/main.ce9eb5cf.css",
+    "static/css/main.6d1ae422.css",
     "static/js/main.49d6de21.js"
   ]
 }
