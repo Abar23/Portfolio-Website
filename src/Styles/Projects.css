@@ -3,15 +3,14 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 50px;
 }
 
 .postcard {
-    flex: 1 0 30%;
+    flex: 0 0 33.3%;
     cursor: pointer;
-    min-width: 400px;
-    height: fit-content;
+    min-width: 300px;
+    max-width: 450px;
     background-color: var(--color-light-black);
     border-radius: 10px;
     overflow: hidden;
@@ -73,5 +72,6 @@
 
 .postcard-description-tag p {
     font-size: 15px;
+    font-weight: bold;
 }
 

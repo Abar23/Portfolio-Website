@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@350&display=swap');
 
 :root {
     --color-black: rgb(0, 0, 0);
@@ -114,6 +114,10 @@ h1, h2, h3, h4, h5, p {
     font-size: 30px;
 }
 
+.section-description {
+    margin: 10px 0px 20px 0px;
+}
+
 .pastel-teal-border {
     border-color: var(--color-pastel-teal);
 }
@@ -132,6 +136,31 @@ h1, h2, h3, h4, h5, p {
 
 .pastel-red-border {
     border-color: var(--color-pastel-red);
+}
+
+.heading-underline::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 6px;
+    background: #149ddd;
+    bottom: 0;
+    left: 0;
+}
+
+.section-list li {
+    margin-left: 20px;
+    margin-top: 6px;
+    color: var(--color-white);
+}
+
+.section-list li > p {
+    display: inline;
+}
+
+.section-list > li:before {
+    color: var(--color-white);
+    content: "○ ";
 }
 
 @media screen and (max-width: 1024px) {

@@ -1,4 +1,5 @@
 import React from 'react'
+import Images from '../Constants/Images.js'
 import '../Styles/Projects.css';
 
 export const Projects = React.forwardRef((props, refs) => {
@@ -12,7 +13,55 @@ export const Projects = React.forwardRef((props, refs) => {
                 <div className='project-poast-card-list'>
                     <div className='postcard'>
                         <div className='postcard-image-container'>
-                            <img src='https://camo.githubusercontent.com/416c2a7709e8cdfc77863c6a40b3838e2dc2ca038c6c2bccdadbae1567d1ec7e/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f535332674145694c656871763644704b56772f67697068792e676966' />
+                            <img src={Images.DungeonsOfAvarice} />
+                        </div>
+                        <div className='postcard-description'>
+                            <div className='section-title'>
+                                <h3><span className='postcard-description-title-underline'>Dungeons of Avarice</span></h3>
+                            </div>
+                            <div className='postcard-description-body'>
+                                <p>
+                                    A co-operative roguelike that allows players to traverse procedurally generated dungeons while collecting deadly weapons, powerful magic spells, and valuable loot.
+                                </p>
+                            </div>
+                            <div className='postcard-description-tag-list'>
+                                <div className='postcard-description-tag background-pastel-purple'>
+                                    <p>Unity</p>
+                                </div>
+                                <div className='postcard-description-tag background-pastel-teal'>
+                                    <p>C#</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className='postcard'>
+                        <div className='postcard-image-container'>
+                            <img src={Images.PortalMario} />
+                        </div>
+                        <div className='postcard-description'>
+                            <div className='section-title'>
+                                <h3><span className='postcard-description-title-underline'>Portal Mario</span></h3>
+                            </div>
+                            <div className='postcard-description-body'>
+                                <p>
+                                    A recreation of the classic Super Mario Bros. for the NES with some mechanics inspired by Portal. Not only can players jump on goombas and koopa troopas, but they can grab the portal gun to solve tricky puzzles and traverse the world in creative ways!
+                                </p>
+                            </div>
+                            <div className='postcard-description-tag-list'>
+                                <div className='postcard-description-tag background-pastel-purple'>
+                                    <p>MonoGame</p>
+                                </div>
+                                <div className='postcard-description-tag background-pastel-teal'>
+                                    <p>C#</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className='postcard'>
+                        <div className='postcard-image-container'>
+                            <img src={Images.MandelBuld} />
                         </div>
                         <div className='postcard-description'>
                             <div className='section-title'>
@@ -20,7 +69,7 @@ export const Projects = React.forwardRef((props, refs) => {
                             </div>
                             <div className='postcard-description-body'>
                                 <p>
-                                    Created WebGL fragment shaders that utilize raymarching and signed distance functions. To create the fragment shaders, I generated a mesh that maps to the canonical screen space coordinates of the viewport. I have created four different fragment shaders for the program.
+                                    Implented WebGL fragment shaders that utilize raymarching and signed distance functions to generate 3D Mandelbulb fractals. Additional shaders exist for this project to showcase the power of raymarching.
                                 </p>
                             </div>
                             <div className='postcard-description-tag-list'>
@@ -36,20 +85,23 @@ export const Projects = React.forwardRef((props, refs) => {
 
                     <div className='postcard'>
                         <div className='postcard-image-container'>
-                            <img src='https://camo.githubusercontent.com/416c2a7709e8cdfc77863c6a40b3838e2dc2ca038c6c2bccdadbae1567d1ec7e/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f535332674145694c656871763644704b56772f67697068792e676966' />
+                            <img src={Images.BoidsBirds} />
                         </div>
                         <div className='postcard-description'>
                             <div className='section-title'>
-                                <h3><span className='postcard-description-title-underline'>Fractal Raymacher</span></h3>
+                                <h3><span className='postcard-description-title-underline'>Boids Birds</span></h3>
                             </div>
                             <div className='postcard-description-body'>
                                 <p>
-                                     I generated a mesh that maps to the canonical screen space coordinates of the viewport. I have created four different fragment shaders for the program.
+                                    Leveraged Boids algorithm and custom 2D animation system to create an interactive application that simulates the flocking behavior of birds observed in nature. Can be used with Google VR carboard glasses for a more immersive experience.
                                 </p>
                             </div>
                             <div className='postcard-description-tag-list'>
                                 <div className='postcard-description-tag background-pastel-orange'>
                                     <p>WebGL</p>
+                                </div>
+                                <div className='postcard-description-tag background-pastel-orange'>
+                                    <p>WebVR</p>
                                 </div>
                                 <div className='postcard-description-tag background-pastel-teal'>
                                     <p>JavaScript</p>
@@ -60,71 +112,26 @@ export const Projects = React.forwardRef((props, refs) => {
 
                     <div className='postcard'>
                         <div className='postcard-image-container'>
-                            <img src='https://camo.githubusercontent.com/416c2a7709e8cdfc77863c6a40b3838e2dc2ca038c6c2bccdadbae1567d1ec7e/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f535332674145694c656871763644704b56772f67697068792e676966' />
+                            <img src={Images.OpenglCoursework} />
                         </div>
                         <div className='postcard-description'>
                             <div className='section-title'>
-                                <h3><span className='postcard-description-title-underline'>Fractal Raymacher</span></h3>
+                                <h3><span className='postcard-description-title-underline'>OpenGL Coursework</span></h3>
                             </div>
                             <div className='postcard-description-body'>
                                 <p>
-                                    Created WebGL fragment shaders that utilize raymarching and signed distance functions. To create the fragment shaders, I generated a mesh that maps to the canonical screen space coordinates of the viewport. I have created four different fragment shaders for the program.
+                                    OpenGL projects created for a real-time rendering course during my undergraduate studies. Projects included hierarchical modeling using custom 3D primitives, drawing plants using turtle graphics, texturing meshes with GLSL samplers, and modifing the OpenGL viewport to display in stereoscopic.
                                 </p>
                             </div>
                             <div className='postcard-description-tag-list'>
                                 <div className='postcard-description-tag background-pastel-orange'>
-                                    <p>WebGL</p>
+                                    <p>OpenGL</p>
                                 </div>
                                 <div className='postcard-description-tag background-pastel-teal'>
-                                    <p>JavaScript</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className='postcard'>
-                        <div className='postcard-image-container'>
-                            <img src='https://camo.githubusercontent.com/416c2a7709e8cdfc77863c6a40b3838e2dc2ca038c6c2bccdadbae1567d1ec7e/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f535332674145694c656871763644704b56772f67697068792e676966' />
-                        </div>
-                        <div className='postcard-description'>
-                            <div className='section-title'>
-                                <h3><span className='postcard-description-title-underline'>Fractal Raymacher</span></h3>
-                            </div>
-                            <div className='postcard-description-body'>
-                                <p>
-                                    Created WebGL fragment shaders that utilize raymarching and signed distance functions. To create the fragment shaders, I generated a mesh that maps to the canonical screen space coordinates of the viewport. I have created four different fragment shaders for the program.
-                                </p>
-                            </div>
-                            <div className='postcard-description-tag-list'>
-                                <div className='postcard-description-tag background-pastel-orange'>
-                                    <p>WebGL</p>
+                                    <p>C++</p>
                                 </div>
                                 <div className='postcard-description-tag background-pastel-teal'>
-                                    <p>JavaScript</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className='postcard'>
-                        <div className='postcard-image-container'>
-                            <img src='https://camo.githubusercontent.com/416c2a7709e8cdfc77863c6a40b3838e2dc2ca038c6c2bccdadbae1567d1ec7e/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f535332674145694c656871763644704b56772f67697068792e676966' />
-                        </div>
-                        <div className='postcard-description'>
-                            <div className='section-title'>
-                                <h3><span className='postcard-description-title-underline'>Fractal Raymacher</span></h3>
-                            </div>
-                            <div className='postcard-description-body'>
-                                <p>
-                                    Created WebGL fragment shaders that utilize raymarching and signed distance functions. To create the fragment shaders, I generated a mesh that maps to the canonical screen space coordinates of the viewport. I have created four different fragment shaders for the program.
-                                </p>
-                            </div>
-                            <div className='postcard-description-tag-list'>
-                                <div className='postcard-description-tag background-pastel-orange'>
-                                    <p>WebGL</p>
-                                </div>
-                                <div className='postcard-description-tag background-pastel-teal'>
-                                    <p>JavaScript</p>
+                                    <p>GLSL</p>
                                 </div>
                             </div>
                         </div>

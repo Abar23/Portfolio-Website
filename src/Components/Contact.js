@@ -44,7 +44,7 @@ export const Contact = React.forwardRef((props, refs) => {
                             </div>
                             <div className='contact-info'>
                                 <h1>Location</h1>
-                                <p>Ohio, United States</p>
+                                <p>Washington, United States</p>
                             </div>
                         </div>
                     </div>

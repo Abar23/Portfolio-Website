@@ -1,5 +1,6 @@
 import React from 'react'
 import Typewriter from 'typewriter-effect';
+import Images from '../Constants/Images';
 import { Parallax } from 'react-parallax';
 import '../Styles/Home.css';
 
@@ -7,11 +8,11 @@ export const Home = React.forwardRef((props, refs) => {
 
     return (
         <div className='home container' ref={refs}>
-            <Parallax   bgImage={'https://images2.alphacoders.com/602/thumb-1920-602223.jpg'}
+            <Parallax   bgImage={Images.ProfessionalPhoto}
                         strength={250}
                         bgImageStyle={{
                             position: 'absolute',
-                            maxWidth: '100vw',
+                            maxHeight: '100%',
                             objectFit: 'cover'
                         }}>
                 <div className='container-inner home-content'>

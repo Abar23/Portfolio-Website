@@ -99,7 +99,7 @@
 }
 
 .navbar-smallscreen-overlay {
-    width: 300px;
+    width: 323px;
     height: 100vh;
     background: var(--color-light-grey);
     position: fixed;

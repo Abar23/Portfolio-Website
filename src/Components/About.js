@@ -23,7 +23,7 @@ export const About = React.forwardRef((props, refs) => {
                     </p>
                     <br/>
                     <p>
-                        Currently, I am chasing my dream of working in the games industry by pursuing an M.S. in Computer Science specializing in Comptuer 
+                        Currently, I am chasing my dream of working in the games industry by pursuing an M.S. in Computer Science specializing in Computer 
                         Graphics at Digipen Institute of Technology. In the future, I hope I can share AAA or indie titles that I have contributed to!
                     </p>
                 </div>

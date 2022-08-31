@@ -5,17 +5,17 @@ import '../Styles/ProjectImage.css';
 export const ProjectImage = (props) => {
 
     return (
-        <Parallax className='project-image-container'
-            bgImage={props.imageUrl}
-            strength={props.imageParallaxStrength}
-            bgImageAlt={props.imageAlt}
-            bgImageStyle={{
-                position: 'absolute',
-                width: '100%',
-                height: 'auto',
-                objectFit: 'cover'
-            }}
-        >
-        </Parallax>
+        <div className='project-image-container background-light-black'>
+            <Parallax className='project-image-container'
+                bgImage={props.imageUrl}
+                strength={props.imageParallaxStrength}
+                bgImageAlt={props.imageAlt}
+                bgImageStyle={{
+                    position: 'absolute',
+                    maxWidth: '100%',
+                    objectFit: 'cover'
+                }}
+            />
+        </div>
     )
 }

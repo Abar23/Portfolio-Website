@@ -7,7 +7,10 @@
 
 .resume-info-section {
     padding-top: 5px;
-    line-height: 30px;
+}
+
+.resume-info-section-description {
+    padding-top: 6px;
 }
 
 .date-location-info {
@@ -145,22 +148,6 @@
     border-color: var(--color-light-blue);
 }
 
-.resume-info-section-list {
-    padding-top: 10px;
-}
-
-.resume-info-section-list li {
-    font-size: 20px;
-    text-indent: -20px;
-    margin-left: 20px;
-    color: var(--color-white);
-}
-
-.resume-info-section-list > li:before {
-    color: var(--color-white);
-    content: "– ";
-}
-
 @media screen and (max-width: 1300px) {
     .resume-download-button-contents svg {
         font-size: 30px;
@@ -186,10 +173,6 @@
     .lower-section-title {
         gap: 10px;
         font-size: 44px;
-    }
-
-    .resume-info-section-list li {
-        font-size: 20px;
     }
 
     /* good below */
