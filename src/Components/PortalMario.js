@@ -26,25 +26,31 @@ export const PortalMario = (props) => {
 
     return (
         <div>
-            <Swiper
-                slidesPerView={1}
-                spaceBetween={30}
-                loop={true}
-                pagination={{
-                    clickable: true
-                }}
-                navigation={true}
-                modules={[Pagination, Navigation]}
-                className="mySwiper"
-            >
-                <SwiperSlide><img src={Images.PortalMario} /></SwiperSlide>
-                <SwiperSlide><img src={Images.MandelBuld} /></SwiperSlide>
-            </Swiper>
+
 
             <ProjectContentContainer>
                 <div className='section-title heading-underline'>
                     <h2>Portal Mario</h2>
                 </div>
+
+                <br />
+
+                <Swiper
+                    slidesPerView={"auto"}
+                    centeredSlides={true}
+                    spaceBetween={30}
+                    navigation={true}
+                    pagination={{
+                        clickable: true,
+                    }}
+                    modules={[Pagination, Navigation]}
+                    className="mySwiper"
+                >
+                    <SwiperSlide><img src={Images.PortalMario} /></SwiperSlide>
+                    <SwiperSlide><img src={Images.MandelBuld} /></SwiperSlide>
+                    <SwiperSlide><img src={Images.MandelBuld} /></SwiperSlide>
+                </Swiper>
+
                 <br />
 
                 <div className='section-title'>
@@ -72,10 +78,7 @@ export const PortalMario = (props) => {
                             <strong style={{ color: 'var(--color-light-blue)' }}>Development Time:</strong> <p>4 months</p>
                         </li>
                         <li>
-                            <strong style={{ color: 'var(--color-light-blue)' }}>Engine:</strong> <p>MonoGame</p>
-                        </li>
-                        <li>
-                            <strong style={{ color: 'var(--color-light-blue)' }}>Language:</strong> <p>C#</p>
+                            <strong style={{ color: 'var(--color-light-blue)' }}>Tech Stack:</strong> <p>MonoGame, C#</p>
                         </li>
                     </ul>
                 </div>
@@ -87,19 +90,27 @@ export const PortalMario = (props) => {
                     <ul className='section-list'>
                         <p>As a Gameplay Programmer, I worked on the following:</p>
                         <li>
-                            <strong style={{ color: 'var(--color-light-blue)' }}>Animation:</strong> <p></p>
+                            <strong style={{ color: 'var(--color-light-blue)' }}>Animation:</strong> <p>Developed the sprite sheet animation system that drives all characters in the scene.</p>
                         </li>
                         <li>
-                            <strong style={{ color: 'var(--color-light-blue)' }}>User Interface:</strong> <p>Created the user interface that presents to the player information concerning lives, coins, and time remaining.</p>
+                            <strong style={{ color: 'var(--color-light-blue)' }}>User Interface:</strong> <p>Created the user interface that presents information to the player concerning number of lives, coins collected, and time remaining.</p>
                         </li>
                         <li>
-                            <strong style={{ color: 'var(--color-light-blue)' }}>Portal Gun & Physics:</strong> <p></p>
+                            <strong style={{ color: 'var(--color-light-blue)' }}>Game Object State Machines:</strong> <p>To easily organize game logic, state machines were used to make fix states containing unique behavior for the enemies, player, and objects.</p>
                         </li>
                         <li>
-                            <strong style={{ color: 'var(--color-light-blue)' }}>Game Object State Machines:</strong> <p></p>
+                            <strong style={{ color: 'var(--color-light-blue)' }}>Portal Gun & Physics:</strong> <p>At the end of the project, my team implemented the Portal Gun, portals, and portal physics. I focused on the the gun and physics tied with the portals.</p>
                         </li>
                     </ul>
                 </div>
+
+                <div className='section-title'>
+                    <h3>Feature List</h3>
+                </div>
+                <div className='section-description'>
+
+                </div>
+
             </ProjectContentContainer>
 
             <Contact />

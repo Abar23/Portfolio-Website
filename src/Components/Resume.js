@@ -170,18 +170,6 @@ export const Resume = (props) => {
                             </legend>
                             <div className='resume-list'>
                                 <div className='resume-info-section'>
-                                    <h2>Ohio State University</h2>
-                                    <hr className='resume-info-section-line' />
-                                    <div className='date-location-info'>
-                                        <p>Columbus, Ohio</p>
-                                        <p>Aug 2014 - Dec 2019</p>
-                                    </div>
-                                    <p className='resume-info-section-description'>
-                                        B.S. in Computer Science and Engineering specializing in Computer Graphics and Game Design - Cum Laude
-                                    </p>
-                                </div>
-
-                                <div className='resume-info-section'>
                                     <h2>DigiPen Institute of Technology</h2>
                                     <hr className='resume-info-section-line' />
                                     <div className='date-location-info'>
@@ -190,6 +178,17 @@ export const Resume = (props) => {
                                     </div>
                                     <p className='resume-info-section-description'>
                                         M.S. in Computer Science specializing in Computer Graphics
+                                    </p>
+                                </div>
+                                <div className='resume-info-section'>
+                                    <h2>Ohio State University</h2>
+                                    <hr className='resume-info-section-line' />
+                                    <div className='date-location-info'>
+                                        <p>Columbus, Ohio</p>
+                                        <p>Aug 2014 - Dec 2019</p>
+                                    </div>
+                                    <p className='resume-info-section-description'>
+                                        B.S. in Computer Science and Engineering specializing in Computer Graphics and Game Design - Cum Laude
                                     </p>
                                 </div>
                             </div>
