@@ -6,10 +6,16 @@
     gap: 50px;
 }
 
+.project-section-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 .postcard {
     flex: 0 0 33.3%;
     cursor: pointer;
-    min-width: 300px;
+    min-width: 325px;
     max-width: 450px;
     background-color: var(--color-light-black);
     border-radius: 10px;
