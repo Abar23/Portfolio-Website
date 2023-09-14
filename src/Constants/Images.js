@@ -4,6 +4,8 @@ const ProfessionalPhoto = require('../Assets/Professional Photo.png');
 const BoidsBirds = require('../Assets/Boids Birds.png');
 const PortalMario = require('../Assets/Portal Mario.png');
 const OpenglCoursework = require('../Assets/OpenGL Coursework.png');
+const DodgeBrawl = require('../Assets/Dodge Brawl.png');
+const RayTracer = require('../Assets/Ray Trace Image.png');
 
 export default {
     MandelBuld, 
@@ -11,5 +13,7 @@ export default {
     ProfessionalPhoto,
     BoidsBirds,
     PortalMario,
-    OpenglCoursework
+    OpenglCoursework,
+    DodgeBrawl,
+    RayTracer
 };

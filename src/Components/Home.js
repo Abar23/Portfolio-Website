@@ -23,9 +23,9 @@ export const Home = React.forwardRef((props, refs) => {
                             <span>
                                 <Typewriter
                                     options={{
-                                        strings: ['Full Stack Developer.', 
-                                                'Graphics Programmer.', 
-                                                'Game Developer.'],
+                                        strings: ['Graphics Programmer.', 
+                                                'Game Developer.',
+                                                'Full Stack Developer.'],
                                         cursor: ' \u2588',
                                         autoStart: true,
                                         loop: true,

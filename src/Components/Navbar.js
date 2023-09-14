@@ -92,7 +92,7 @@ export const Navbar = (props) => {
                     <RouterLink to='/' className='p-nav-link-text' onClick={handleLogoClick}>
                         <div className='navbar-logo'>
                             <h3 className='navbar-logo-name'>Anthony Bartholomew</h3>
-                            <p className='navbar-logo-subtext'>Full Stack, Graphics, Game Programmer</p>
+                            <p className='navbar-logo-subtext'>Graphics, Game, Full Stack Programmer</p>
                         </div>
                     </RouterLink>
                     <div>

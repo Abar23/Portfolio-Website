@@ -91,7 +91,7 @@ a {
 }
 
 .container-inner {    
-    max-width: 80%;
+    max-width: 60%;
     margin: 0 auto;
     padding-top: 70px;
     padding-bottom: 70px;
@@ -104,6 +104,10 @@ a {
 
 h1, h2, h3, h4, h5, p {
     color: var(--color-white);
+}
+
+p, li {
+    font-size: 20px;
 }
 
 .section-title h2 {

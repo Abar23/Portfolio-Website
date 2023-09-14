@@ -40,6 +40,16 @@ export const Resume = (props) => {
         >
             <div className='contact container background-light-grey'>
                 <div className='container-inner'>
+                <div className='resume-download'>
+                        <button className='resume-download-button'>
+                            <a href={Documents.resume} rel='noopener noreferrer' target='_blank'>
+                                <div className='resume-download-button-contents'>
+                                    <VscFilePdf />
+                                    <span>Download Resume</span>
+                                </div>
+                            </a>
+                        </button>
+                    </div>
                     <div className='resume-margin-separation'>
                         <fieldset className='resume-fieldset'>
                             <legend className='lower-section-title-legend'>
@@ -303,16 +313,6 @@ export const Resume = (props) => {
                                 </fieldset>
                             </div>
                         </fieldset>
-                    </div>
-                    <div className='resume-download'>
-                        <button className='resume-download-button'>
-                            <a href={Documents.resume} rel='noopener noreferrer' target='_blank'>
-                                <div className='resume-download-button-contents'>
-                                    <VscFilePdf />
-                                    <span>Download Resume</span>
-                                </div>
-                            </a>
-                        </button>
                     </div>
                 </div>
             </div>

@@ -84,7 +84,7 @@ export const PortalMario = (props) => {
                 </div>
 
                 <div className='section-title'>
-                    <h3>Responsibilities</h3>
+                    <h3>Contributions</h3>
                 </div>
                 <div className='section-description'>
                     <ul className='section-list'>

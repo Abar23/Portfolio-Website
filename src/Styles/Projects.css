@@ -34,6 +34,7 @@
 
 .postcard:hover {
     border: 2px solid var(--color-light-blue);
+    cursor: default;
 }
 
 .postcard:hover img {
