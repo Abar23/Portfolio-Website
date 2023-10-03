@@ -15,7 +15,7 @@ export const Projects = React.forwardRef((props, refs) => {
                     <div className='project-post-card-list'>
                         <Postcard
                             title="Dodge Brawl"
-                            description="Couch competitive dodgeball game built with a custom C++ engine, where players battle to be the last person standing. "
+                            description="Local competitive dodgeball game built with a custom C++ engine, where players battle to be the last person standing"
                             tags={[
                                 { text: "C++", backgroundColor: "background-pastel-teal" },
                                 { text: "OpenGL", backgroundColor: "background-pastel-purple" },
