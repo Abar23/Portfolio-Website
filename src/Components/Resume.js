@@ -108,186 +108,186 @@ export const Resume = (props) => {
         >
             <div className='contact container background-light-grey'>
                 <div className='container-inner'>
+                <div className='resume-margin-separation'>
+                    <fieldset className='resume-fieldset'>
+                        <legend className='lower-section-title-legend'>
+                            <div className='lower-section-title-background'>
+                                <h2 className='lower-section-title'>
+                                    <MdWork />
+                                    Experience
+                                </h2>
+                            </div>
+                        </legend>
+                        <div className='resume-list'>
+                            {resumeSections.map((section, index) => (
+                                <ResumeInfoSection
+                                key={index}
+                                title={section.title}
+                                company={section.company}
+                                location={section.location}
+                                date={section.date}
+                                description={section.description}
+                                />
+                            ))}
+                        </div>
+                    </fieldset>
+                </div>
+                <div className='resume-margin-separation'>
+                    <fieldset className='resume-fieldset'>
+                        <legend className='lower-section-title-legend'>
+                            <div className='lower-section-title-background'>
+                                <h2 className='lower-section-title'>
+                                    <FaUniversity />
+                                    Education
+                                </h2>
+                            </div>
+                        </legend>
+                        <div className='resume-list'>
+                            <div className='resume-info-section'>
+                                <h2>DigiPen Institute of Technology</h2>
+                                <hr className='resume-info-section-line' />
+                                <div className='date-location-info'>
+                                    <p>Redmond, Washington</p>
+                                    <p>Aug 2022 - Present</p>
+                                </div>
+                                <p className='resume-info-section-description'>
+                                    M.S. in Computer Science specializing in Computer Graphics
+                                </p>
+                            </div>
+                            <div className='resume-info-section'>
+                                <h2>Ohio State University</h2>
+                                <hr className='resume-info-section-line' />
+                                <div className='date-location-info'>
+                                    <p>Columbus, Ohio</p>
+                                    <p>Aug 2014 - Dec 2019</p>
+                                </div>
+                                <p className='resume-info-section-description'>
+                                    B.S. in Computer Science and Engineering specializing in Computer Graphics and Game Design - Cum Laude
+                                </p>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <div className='resume-margin-separation'>
+                    <fieldset className='resume-fieldset'>
+                        <legend className='lower-section-title-legend'>
+                            <div className='lower-section-title-background'>
+                                <h2 className='lower-section-title'>
+                                    <BsAwardFill />
+                                    Awards
+                                </h2>
+                            </div>
+                        </legend>
+                        <div className='resume-list'>
+                            <div className='resume-info-section'>
+                                <div className='resume-info-section'>
+                                    <h2>Capstone Project Competition - Best in Class for "Dungeons of Avarice"</h2>
+                                    <hr className='resume-info-section-line' />
+                                    <div className='date-location-info'>
+                                        <p>December 2019</p>
+                                    </div>
+                                    <p className='resume-info-section-description'>
+                                        Presented by Ohio State University's Department of Computer Science.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <div className='resume-margin-separation'>
+                    <fieldset className='resume-fieldset'>
+                        <legend className='lower-section-title-legend'>
+                            <div className='lower-section-title-background'>
+                                <h2 className='lower-section-title'>
+                                    <BsGearFill />
+                                    Skills
+                                </h2>
+                            </div>
+                        </legend>
+                        <div className='resume-skills'>
+                            <fieldset className='resume-skills-fieldset pastel-teal-border'>
+                                <legend className='resume-skills-legend'>
+                                    <div className='resume-skills-section-title'>
+                                        <h3>Languages</h3>
+                                    </div>
+                                </legend>
+                                <div className='resume-logo-grid'>
+                                    <Svg.CLanguage />
+                                    <Svg.CPlusPlus />
+                                    <Svg.CSharp />
+                                    <Svg.Java />
+                                    <Svg.Html />
+                                    <Svg.Css />
+                                    <Svg.Javascript />
+                                    <Svg.Python />
+                                    <Svg.Lua />
+                                </div>
+                            </fieldset>
+                            <fieldset className='resume-skills-fieldset pastel-green-border'>
+                                <legend className='resume-skills-legend'>
+                                    <div className='resume-skills-section-title'>
+                                        <h3>Software</h3>
+                                    </div>
+                                </legend>
+                                <div className='resume-logo-grid'>
+                                    <Svg.Git />
+                                    <Svg.Github />
+                                    <Svg.Confluence />
+                                    <Svg.Jira />
+                                    <Svg.BitBucket />
+                                    <Svg.VsStudios />
+                                    <Svg.IntelliJ />
+                                </div>
+                            </fieldset>
+                            <fieldset className='resume-skills-fieldset pastel-red-border'>
+                                <legend className='resume-skills-legend'>
+                                    <div className='resume-skills-section-title'>
+                                        <h3>Frameworks</h3>
+                                    </div>
+                                </legend>
+                                <div className='resume-logo-grid'>
+                                    <Svg.Spring />
+                                    <Svg.Kafka />
+                                    <Svg.ReactFramework />
+                                    <Svg.Cassandra />
+                                </div>
+                            </fieldset>
+                            <fieldset className='resume-skills-fieldset pastel-purple-border'>
+                                <legend className='resume-skills-legend'>
+                                    <div className='resume-skills-section-title'>
+                                        <h3>Game Engines</h3>
+                                    </div>
+                                </legend>
+                                <div className='resume-logo-grid'>
+                                    <Svg.Unity />
+                                    <Svg.Unreal />
+                                    <Svg.MonoGame />
+                                </div>
+                            </fieldset>
+                            <fieldset className='resume-skills-fieldset pastel-orange-border'>
+                                <legend className='resume-skills-legend'>
+                                    <div className='resume-skills-section-title'>
+                                        <h3>Graphics</h3>
+                                    </div>
+                                </legend>
+                                <div className='resume-logo-grid'>
+                                    <Svg.OpengGl />
+                                    <Svg.WebGl />
+                                </div>
+                            </fieldset>
+                        </div>
+                    </fieldset>
+                </div>
                 <div className='resume-download'>
-                        <button className='resume-download-button'>
-                            <a href={Documents.resume} rel='noopener noreferrer' target='_blank'>
-                                <div className='resume-download-button-contents'>
-                                    <VscFilePdf />
-                                    <span>Download Resume</span>
-                                </div>
-                            </a>
-                        </button>
-                    </div>
-                    <div className='resume-margin-separation'>
-                        <fieldset className='resume-fieldset'>
-                            <legend className='lower-section-title-legend'>
-                                <div className='lower-section-title-background'>
-                                    <h2 className='lower-section-title'>
-                                        <MdWork />
-                                        Experience
-                                    </h2>
-                                </div>
-                            </legend>
-                            <div className='resume-list'>
-                                {resumeSections.map((section, index) => (
-                                    <ResumeInfoSection
-                                    key={index}
-                                    title={section.title}
-                                    company={section.company}
-                                    location={section.location}
-                                    date={section.date}
-                                    description={section.description}
-                                    />
-                                ))}
+                    <button className='resume-download-button'>
+                        <a href={Documents.resume} rel='noopener noreferrer' target='_blank'>
+                            <div className='resume-download-button-contents'>
+                                <VscFilePdf />
+                                <span>Download Resume</span>
                             </div>
-                        </fieldset>
-                    </div>
-                    <div className='resume-margin-separation'>
-                        <fieldset className='resume-fieldset'>
-                            <legend className='lower-section-title-legend'>
-                                <div className='lower-section-title-background'>
-                                    <h2 className='lower-section-title'>
-                                        <FaUniversity />
-                                        Education
-                                    </h2>
-                                </div>
-                            </legend>
-                            <div className='resume-list'>
-                                <div className='resume-info-section'>
-                                    <h2>DigiPen Institute of Technology</h2>
-                                    <hr className='resume-info-section-line' />
-                                    <div className='date-location-info'>
-                                        <p>Redmond, Washington</p>
-                                        <p>Aug 2022 - Present</p>
-                                    </div>
-                                    <p className='resume-info-section-description'>
-                                        M.S. in Computer Science specializing in Computer Graphics
-                                    </p>
-                                </div>
-                                <div className='resume-info-section'>
-                                    <h2>Ohio State University</h2>
-                                    <hr className='resume-info-section-line' />
-                                    <div className='date-location-info'>
-                                        <p>Columbus, Ohio</p>
-                                        <p>Aug 2014 - Dec 2019</p>
-                                    </div>
-                                    <p className='resume-info-section-description'>
-                                        B.S. in Computer Science and Engineering specializing in Computer Graphics and Game Design - Cum Laude
-                                    </p>
-                                </div>
-                            </div>
-                        </fieldset>
-                    </div>
-                    <div className='resume-margin-separation'>
-                        <fieldset className='resume-fieldset'>
-                            <legend className='lower-section-title-legend'>
-                                <div className='lower-section-title-background'>
-                                    <h2 className='lower-section-title'>
-                                        <BsAwardFill />
-                                        Awards
-                                    </h2>
-                                </div>
-                            </legend>
-                            <div className='resume-list'>
-                                <div className='resume-info-section'>
-                                    <div className='resume-info-section'>
-                                        <h2>Capstone Project Competition - Best in Class for "Dungeons of Avarice"</h2>
-                                        <hr className='resume-info-section-line' />
-                                        <div className='date-location-info'>
-                                            <p>December 2019</p>
-                                        </div>
-                                        <p className='resume-info-section-description'>
-                                            Presented by Ohio State University's Department of Computer Science.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </fieldset>
-                    </div>
-                    <div className='resume-margin-separation'>
-                        <fieldset className='resume-fieldset'>
-                            <legend className='lower-section-title-legend'>
-                                <div className='lower-section-title-background'>
-                                    <h2 className='lower-section-title'>
-                                        <BsGearFill />
-                                        Skills
-                                    </h2>
-                                </div>
-                            </legend>
-                            <div className='resume-skills'>
-                                <fieldset className='resume-skills-fieldset pastel-teal-border'>
-                                    <legend className='resume-skills-legend'>
-                                        <div className='resume-skills-section-title'>
-                                            <h3>Languages</h3>
-                                        </div>
-                                    </legend>
-                                    <div className='resume-logo-grid'>
-                                        <Svg.CLanguage />
-                                        <Svg.CPlusPlus />
-                                        <Svg.CSharp />
-                                        <Svg.Java />
-                                        <Svg.Html />
-                                        <Svg.Css />
-                                        <Svg.Javascript />
-                                        <Svg.Python />
-                                        <Svg.Lua />
-                                    </div>
-                                </fieldset>
-                                <fieldset className='resume-skills-fieldset pastel-green-border'>
-                                    <legend className='resume-skills-legend'>
-                                        <div className='resume-skills-section-title'>
-                                            <h3>Software</h3>
-                                        </div>
-                                    </legend>
-                                    <div className='resume-logo-grid'>
-                                        <Svg.Git />
-                                        <Svg.Github />
-                                        <Svg.Confluence />
-                                        <Svg.Jira />
-                                        <Svg.BitBucket />
-                                        <Svg.VsStudios />
-                                        <Svg.IntelliJ />
-                                    </div>
-                                </fieldset>
-                                <fieldset className='resume-skills-fieldset pastel-red-border'>
-                                    <legend className='resume-skills-legend'>
-                                        <div className='resume-skills-section-title'>
-                                            <h3>Frameworks</h3>
-                                        </div>
-                                    </legend>
-                                    <div className='resume-logo-grid'>
-                                        <Svg.Spring />
-                                        <Svg.Kafka />
-                                        <Svg.ReactFramework />
-                                        <Svg.Cassandra />
-                                    </div>
-                                </fieldset>
-                                <fieldset className='resume-skills-fieldset pastel-purple-border'>
-                                    <legend className='resume-skills-legend'>
-                                        <div className='resume-skills-section-title'>
-                                            <h3>Game Engines</h3>
-                                        </div>
-                                    </legend>
-                                    <div className='resume-logo-grid'>
-                                        <Svg.Unity />
-                                        <Svg.Unreal />
-                                        <Svg.MonoGame />
-                                    </div>
-                                </fieldset>
-                                <fieldset className='resume-skills-fieldset pastel-orange-border'>
-                                    <legend className='resume-skills-legend'>
-                                        <div className='resume-skills-section-title'>
-                                            <h3>Graphics</h3>
-                                        </div>
-                                    </legend>
-                                    <div className='resume-logo-grid'>
-                                        <Svg.OpengGl />
-                                        <Svg.WebGl />
-                                    </div>
-                                </fieldset>
-                            </div>
-                        </fieldset>
-                    </div>
+                        </a>
+                    </button>
+                </div>
                 </div>
             </div>
             <Contact />
