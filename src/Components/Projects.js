@@ -12,7 +12,7 @@ export const Projects = React.forwardRef((props, refs) => {
                     <div className='section-title'>
                         <h2>Team Projects</h2>
                     </div>
-                    <div className='project-poast-card-list'>
+                    <div className='project-post-card-list'>
                         <Postcard
                             title="Dodge Brawl"
                             description="Couch competitive dodgeball game built with a custom C++ engine, where players battle to be the last person standing. "
@@ -48,18 +48,6 @@ export const Projects = React.forwardRef((props, refs) => {
                             imageSrc={Images.PortalMario}
                             imageAlt="PortalMario"
                             />
-
-                        <Postcard
-                            title="Boids Birds"
-                            description="Leveraged Boids algorithm and custom 2D animation system to create an interactive application that simulates the flocking behavior of birds observed in nature. Can be used with Google VR carboard glasses for a more immersive experience.                            "
-                            tags={[
-                                { text: "JavaScript", backgroundColor: "background-pastel-teal" },
-                                { text: "WebGL", backgroundColor: "background-pastel-purple" },
-                                { text: "WebVR", backgroundColor: "background-pastel-purple" }
-                            ]}
-                            imageSrc={Images.BoidsBirds}
-                            imageAlt="BoidsBirds"
-                            />
                     </div>
                 </div>
 
@@ -67,7 +55,7 @@ export const Projects = React.forwardRef((props, refs) => {
                     <div className='section-title'>
                         <h2>Personal Works</h2>
                     </div>
-                    <div className='project-poast-card-list'>
+                    <div className='project-post-card-list'>
                         <Postcard
                             title="CPU Ray Tracer"
                             description="Offline CPU ray tracer capable of rendering BRDF-based lighting that supports material properties including specular, transmission, shininess, refraction, and diffuse. It additionally supports arbitrary shaped lights and depth of field."
@@ -84,22 +72,22 @@ export const Projects = React.forwardRef((props, refs) => {
                             description="Implemented WebGL fragment shaders that utilize raymarching and signed distance functions to generate 3D Mandelbulb fractals. Additional shaders exist for this project to showcase the power of raymarching."
                             tags={[
                                 { text: "JavaScript", backgroundColor: "background-pastel-teal" },
-                                { text: "WebGL", backgroundColor: "background-pastel-orange" },
+                                { text: "WebGL", backgroundColor: "background-pastel-purple" },
                             ]}
                             imageSrc={Images.MandelBuld}
                             imageAlt="Mandelbulb"
                             />
 
                         <Postcard
-                            title="OpenGL Coursework"
-                            description="OpenGL projects created for a real-time rendering course during my undergraduate studies. Projects included hierarchical modeling using custom 3D primitives, drawing plants using turtle graphics, texturing meshes with GLSL samplers, and modifing the OpenGL viewport to display in stereoscopic."
+                            title="Boids Birds"
+                            description="Leveraged Boids algorithm and custom 2D animation system to create an interactive application that simulates the flocking behavior of birds observed in nature. Can be used with Google VR carboard glasses for a more immersive experience.                            "
                             tags={[
-                                { text: "C++", backgroundColor: "background-pastel-teal" },
-                                { text: "GLSL", backgroundColor: "background-pastel-teal" },
-                                { text: "OpenGL", backgroundColor: "background-pastel-orange" }
+                                { text: "JavaScript", backgroundColor: "background-pastel-teal" },
+                                { text: "WebGL", backgroundColor: "background-pastel-purple" },
+                                { text: "WebVR", backgroundColor: "background-pastel-purple" }
                             ]}
-                            imageSrc={Images.OpenglCoursework}
-                            imageAlt="OpenglCoursework"
+                            imageSrc={Images.BoidsBirds}
+                            imageAlt="BoidsBirds"
                             />
                     </div>
                 </div>
