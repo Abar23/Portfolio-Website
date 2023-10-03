@@ -11,14 +11,16 @@ function Postcard({ title, description, tags, imageSrc, imageAlt }) {
           <h3><span className='postcard-description-title-underline'>{title}</span></h3>
         </div>
         <div className='postcard-description-body'>
-          <p>{description}</p>
-        </div>
-        <div className='postcard-description-tag-list'>
-          {tags.map((tag, index) => (
-            <div key={index} className={`postcard-description-tag ${tag.backgroundColor}`}>
-              <p>{tag.text}</p>
-            </div>
-          ))}
+          <div className='postcard-description-tag-list'>
+            {tags.map((tag, index) => (
+              <div key={index} className={`postcard-description-tag ${tag.backgroundColor}`}>
+                <p>{tag.text}</p>
+              </div>
+            ))}
+          </div>
+          <div>         
+            <p>{description}</p>
+          </div>
         </div>
       </div>
     </div>

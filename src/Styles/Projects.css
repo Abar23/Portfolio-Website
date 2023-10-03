@@ -19,7 +19,6 @@
     max-width: 450px;
     background-color: var(--color-light-black);
     border-radius: 10px;
-    overflow: hidden;
     box-shadow: 0 0 24px 0 var(--color-black);
     transition: .5s ease;
     border: 2px solid var(--color-navy-blue);
@@ -47,6 +46,7 @@
     overflow: hidden;
     text-align: center;
     background-color: var(--color-black);
+    border-radius: 10px;
 }
 
 .postcard-image-container img {
@@ -61,11 +61,14 @@
 }
 
 .postcard-description-body {
-    padding-top: 15px;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .postcard-description-tag-list {
-    padding-top: 20px;
+    padding-top: 15px;
     display: flex;
     flex-direction: row;
     gap: 10px;
