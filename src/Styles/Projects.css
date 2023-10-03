@@ -1,9 +1,9 @@
 .project-post-card-list {
     margin: 20px 0px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 425px));
+    grid-gap: 100px;
+    justify-content: center;
 }
 
 .project-section-list {

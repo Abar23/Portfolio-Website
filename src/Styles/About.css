@@ -1,6 +1,5 @@
 .about-container-inner-border-style::before {
     content: "";
-    position: absolue;
     display: block;
     width: 100%;
     margin-bottom: 30px;
@@ -9,7 +8,6 @@
 
 .about-container-inner-border-style::after {
     content: "";
-    position: absolue;
     display: block;
     width: 100%;
     margin-top: 40px;
