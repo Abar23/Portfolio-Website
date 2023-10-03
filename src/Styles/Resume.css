@@ -23,6 +23,10 @@
     color: var(--color-grey);
 }
 
+.date-location-info strong {
+    color: var(--color-light-blue);
+}
+
 .resume-download {
     margin-top: 60px;
 }

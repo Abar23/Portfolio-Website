@@ -6,10 +6,78 @@ import { FaUniversity } from 'react-icons/fa';
 import { MdWork } from 'react-icons/md';
 import { BsAwardFill, BsGearFill } from 'react-icons/bs';
 import { motion } from "framer-motion";
+import ResumeInfoSection from './ResumeInfoSection';
 import Svg from '../Constants/Svg';
 import '../Styles/Resume.css';
 
 export const Resume = (props) => {
+
+    const resumeSections = [
+        {
+            title: 'Gameplay Programmer Intern',
+            company: 'Psyonix',
+            location: 'San Diego, CA',
+            date: 'May - Aug. 2023',
+            description: 'Worked on the game client team to develop and design player-facing gameplay mechanics for Psyonix’s upcoming title, using both Blueprints and C++ in Unreal Engine 5.',
+            listItems: [
+                'Developed skilled AI utilizing behavior trees to compete against novice players, delivering an immersive experience.',
+                'Improved the player’s driving mechanics by implementing new features for the vehicle’s physics-based abilities.',
+                'Exposed game assets to user-generated content tools for the Unreal Editor for Fortnite.',
+                'Collaborated with the design team to gather requirements and create development road maps for new gameplay features.',
+                'Participated in playtesting sessions to provide feedback and identify bugs in gameplay mechanics.'
+            ]
+        },
+        {
+            title: 'Full Stack Engineer',
+            company: 'JPMorgan Chase & Co.',
+            location: 'Columbus, OH',
+            date: 'Feb. 2020 - Apr. 2022',
+            description: 'Focused on implementing front-end and back-end solutions for the Community & Consumer Banking sector, enabling over 230,000 businesses to apply for payroll loans through the Paycheck Protection Program.',
+            listItems: [
+                'Utilized Spring and Apache Kafka to implement distributed, event-driven microservices.',
+                'Developed secure REST controllers that allowed web service calls to safely communicate with back-end servers.',
+                'Improve customer profile data retrieval time by creating query-performant Apache Cassandra database tables.',
+                'Led back-end production deployments for new business requirements, framework version upgrades, and security updates.'
+            ]
+        },
+        {
+            title: 'Software Engineer Intern',
+            company: 'JPMorgan Chase & Co.',
+            location: 'Columbus, OH',
+            date: 'June - Aug. 2019',
+            description: 'Responsible for prototyping an artificial intelligence system that utilized network traffic predict data transmission failures and determine network reliability patterns for internal file transfering tools.',
+            listItems: [
+                'Utilized AI models of IBM Watson Studio to generate inferences on internally produced data of MFT.',
+                'Deployed a python-based Flask microservice that hosted a public endpoint to create data sets used for training and data processing of AI models.',
+                'Setup continuous integration and deployment tools to ensure code quality and up-to-date releases.',
+                'Followed test-driven development practices by writing test cases in Python’s Unittest framework.'
+            ]
+        },
+        {
+            title: 'Virtual Reality Environment Programmer',
+            company: 'Ohio State University',
+            location: 'Columbus, OH',
+            date: 'Mar. – May 2018, Sept. – Dec. 2019',
+            description: 'Recreated doctors’ offices in virtual reality, allowing medical professionals to preview how new equipment would fit into their workspace before making a purchase. ',
+            listItems: [
+                'Simulated medical imaging equipment that allows users to take pictures and videos from a camera in the scene.',
+                'Utilized render texture targets to display back to the user the perspective of the camera.',
+                'Designed a back-end Node.js server to save image and video data received from the user to persistent storage.'
+            ]
+        },
+        {
+            title: 'Embedded Firmware Co-op',
+            company: 'GE Appliances',
+            location: 'Louisville, KY',
+            date: 'Aug. - Dec. 2017, May - Aug. 2018',
+            description: 'Developed firmware for the refrigeration and air conditioning product lines at one of the industry’s leading manufacturers of electronic appliances for homes and businesses.',
+            listItems: [
+                'Utilized Test-Driven Development practices to ensure high-quality, maintainable, and reliable code.',
+                'Designed control algorithms for auger motors, cooling fans, and user interface LEDs in open and closed-loop configurations.',
+                'Leveraged appliance testing benches to validate firmware changes before merging into the production code base.',
+            ]
+        }
+    ];
 
     useEffect(() => {
         window.document.querySelectorAll('.resumeNavLink')[0].classList.add('activeClass');
@@ -61,110 +129,16 @@ export const Resume = (props) => {
                                 </div>
                             </legend>
                             <div className='resume-list'>
-                                <div className='resume-info-section'>
-                                    <h2><strong>Full Stack Engineer</strong></h2>
-                                    <hr className='resume-info-section-line' />
-                                    <div className='date-location-info'>
-                                        <p><strong>JPMorgan Chase & Co.</strong> - Columbus, Ohio</p>
-                                        <p>Feb 2020 - Apr 2022</p>
-                                    </div>
-                                    <p className='resume-info-section-description'>
-                                        Worked in the Digital Account Opening and Business Lending product lines under the Community & Consumer Banking sector. Focused on implementing user facing web pages, databases, and back-end microservices that allowed +230,000 businesses to apply for the Paycheck Protection Loan program.
-                                    </p>
-                                    <ul className='section-list'>
-                                        <li>
-                                            Utilized Spring for Apache Kafka to create event-driven micro-services.
-                                        </li>
-                                        <li>
-                                            Leveraged BlueJS, a proprietary front-end framework, to develop customer facing webpages.
-                                        </li>
-                                        <li>
-                                            Developed REST controllers to allow webpages to communicate with back-end services.
-                                        </li>
-                                        <li>
-                                            Performed data modeling using Apache Cassandra databases.
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div className='resume-info-section'>
-                                    <h2><strong>Software Engineer Intern</strong></h2>
-                                    <hr className='resume-info-section-line' />
-                                    <div className='date-location-info'>
-                                        <p><strong>JPMorgan Chase & Co.</strong> - Columbus, Ohio</p>
-                                        <p>June - Aug 2019</p>
-                                    </div>
-                                    <p className='resume-info-section-description'>
-                                        Responsible for prototyping an artificial intelligence system that utilized network traffic data to predict potential failures of file transmissions and network reliability patterns for the Managed File Transfer tool.
-                                    </p>
-                                    <ul className='section-list'>
-                                        <li>
-                                            Utilized AI models of IBM Watson Studio to generate inferences on internally produced data of MFT.
-                                        </li>
-                                        <li>
-                                            Deployed a python-based Flask microservice that hosted a public endpoint to create data sets used
-                                            for training and data processing of AI models.
-                                        </li>
-                                        <li>
-                                            Setup continuous integration and deployment tools to ensure code quality and up to date releases.
-                                        </li>
-                                        <li>
-                                            Followed test-driven development practices by writing test cases in Python’s Unittest framework.
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div className='resume-info-section'>
-                                    <h2><strong>Virtual Reality Environment Programmer</strong></h2>
-                                    <hr className='resume-info-section-line' />
-                                    <div className='date-location-info'>
-                                        <p>Ohio State University - Columbus, Ohio</p>
-                                        <p>Mar – May 2018, Sept – Dec 2019</p>
-                                    </div>
-                                    <p className='resume-info-section-description'>
-                                        Conducted research at the Advanced Computing Center for Arts and Design department to recreate medical professionals' offices in virtual reality using 360° photos and 3D modeling software. Tasked with developing virtual systems that could be applied to 3D assets to mimic real-world medical technology.
-                                    </p>
-                                    <ul className='section-list'>
-                                        <li>
-                                            Developed a virtual camera system using three.js and Aframe that allows users to take screenshots and videos from secondary cameras in the scene to emulate medical imaging equipment.
-                                        </li>
-                                        <li>
-                                            Designed open-loop ramping algorithms for internal cooling fans and user interface LED’s.
-                                        </li>
-                                        <li>
-                                            Took advantage of render texture targets to create a camera feed system where a planar piece of geometry displays back to the user what the virtual camera is rendering.
-                                        </li>
-                                        <li>
-                                            Designed a backend Node.js server that enabled image data received from users to be saved to persistent local storage as either a screenshot or video.
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div className='resume-info-section'>
-                                    <h2><strong>Embedded Firmware Co-op</strong></h2>
-                                    <hr className='resume-info-section-line' />
-                                    <div className='date-location-info'>
-                                        <p>GE Appliances, a Haier Company - Columbus, Ohio</p>
-                                        <p>Aug - Dec 2017, May - Aug 2018</p>
-                                    </div>
-                                    <p className='resume-info-section-description'>
-                                        Developed firmware on the refrigeration and air conditioning product lines for one of the industry’s leading manufacturers of in-home appliances.
-                                    </p>
-                                    <ul className='section-list'>
-                                        <li>
-                                            Employed test-driven development software practices to produce high-quality code.
-                                        </li>
-                                        <li>
-                                            Designed open-loop ramping algorithms for internal cooling fans and user interface LED’s.
-                                        </li>
-                                        <li>
-                                            Updated service diagnostics tools for all air conditioning products to provide a standard troubleshooting interface for technicians in the field.
-                                        </li>
-                                        <li>
-                                            Deployed factory diagnostics tool that allowed workers on the line to ensure that new refrigeration mainboards were properly flashed.
-                                        </li>
-                                        <li>
-                                            Collaborated with Quality Assurance team to fix newly discovered bugs and create documentation that decreased development time of automated testing.
-                                        </li>
-                                    </ul>
-                                </div>
+                                {resumeSections.map((section, index) => (
+                                    <ResumeInfoSection
+                                    key={index}
+                                    title={section.title}
+                                    company={section.company}
+                                    location={section.location}
+                                    date={section.date}
+                                    description={section.description}
+                                    />
+                                ))}
                             </div>
                         </fieldset>
                     </div>

@@ -1,4 +1,4 @@
-import resume from '../Assets/Anthony Bartholomew Resume.pdf';
+import resume from '../Assets/Resume of Anthony Bartholomew.pdf';
 
 export default {
     resume

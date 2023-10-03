@@ -18,14 +18,13 @@ export const Projects = React.forwardRef((props, refs) => {
                             description="Couch competitive dodgeball game built with a custom C++ engine, where players battle to be the last person standing. "
                             tags={[
                                 { text: "C++", backgroundColor: "background-pastel-teal" },
-                                { text: "GLSL", backgroundColor: "background-pastel-teal" },
                                 { text: "OpenGL", backgroundColor: "background-pastel-purple" },
                                 { text: "GLFW", backgroundColor: "background-pastel-orange" },
                                 { text: "ImGui", backgroundColor: "background-pastel-orange" }
                             ]}
                             imageSrc={Images.DodgeBrawl}
                             imageAlt="DodgeBrawl"
-                            />
+                        />
 
                         <Postcard
                             title="Dungeons of Avarice"
@@ -36,7 +35,7 @@ export const Projects = React.forwardRef((props, refs) => {
                             ]}
                             imageSrc={Images.DungeonsOfAvarice}
                             imageAlt="DungeonsOfAvarice"
-                            />
+                        />
 
                         <Postcard
                             title="Portal Mario"
@@ -47,7 +46,7 @@ export const Projects = React.forwardRef((props, refs) => {
                             ]}
                             imageSrc={Images.PortalMario}
                             imageAlt="PortalMario"
-                            />
+                        />
                     </div>
                 </div>
 
@@ -57,6 +56,19 @@ export const Projects = React.forwardRef((props, refs) => {
                     </div>
                     <div className='project-post-card-list'>
                         <Postcard
+                            title="Skeletal Animation"
+                            description="Developed a 3D animation system within my custom game engine that is capable of interpolating between keyframes to animate complex models with a large number of bones."
+                            tags={[
+                                { text: "C++", backgroundColor: "background-pastel-teal" },
+                                { text: "OpenGL", backgroundColor: "background-pastel-purple" },
+                                { text: "Assimp", backgroundColor: "background-pastel-orange" },
+                                { text: "GLFW", backgroundColor: "background-pastel-orange" },
+                                { text: "ImGui", backgroundColor: "background-pastel-orange" }
+                            ]}
+                            imageSrc={Images.SkeletalAnimation}
+                            imageAlt="Skeletal Animation"
+                        />
+                        <Postcard
                             title="CPU Ray Tracer"
                             description="Offline CPU ray tracer capable of rendering BRDF-based lighting that supports material properties including specular, transmission, shininess, refraction, and diffuse. It additionally supports arbitrary shaped lights and depth of field."
                             tags={[
@@ -65,7 +77,7 @@ export const Projects = React.forwardRef((props, refs) => {
                             ]}
                             imageSrc={Images.RayTracer}
                             imageAlt="RayTracer"
-                            />
+                        />  
                         
                         <Postcard
                             title="Fractal Raymacher"
@@ -76,7 +88,7 @@ export const Projects = React.forwardRef((props, refs) => {
                             ]}
                             imageSrc={Images.MandelBuld}
                             imageAlt="Mandelbulb"
-                            />
+                        />
 
                         <Postcard
                             title="Boids Birds"
@@ -88,7 +100,7 @@ export const Projects = React.forwardRef((props, refs) => {
                             ]}
                             imageSrc={Images.BoidsBirds}
                             imageAlt="BoidsBirds"
-                            />
+                        />
                     </div>
                 </div>
             </div>

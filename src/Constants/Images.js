@@ -6,6 +6,7 @@ const PortalMario = require('../Assets/Portal Mario.png');
 const OpenglCoursework = require('../Assets/OpenGL Coursework.png');
 const DodgeBrawl = require('../Assets/Dodge Brawl.png');
 const RayTracer = require('../Assets/Ray Trace Image.png');
+const SkeletalAnimation = require('../Assets/Animation Project.png');
 
 export default {
     MandelBuld, 
@@ -15,5 +16,6 @@ export default {
     PortalMario,
     OpenglCoursework,
     DodgeBrawl,
-    RayTracer
+    RayTracer,
+    SkeletalAnimation
 };
