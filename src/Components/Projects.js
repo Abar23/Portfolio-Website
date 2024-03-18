@@ -8,6 +8,23 @@ export const Projects = React.forwardRef((props, refs) => {
     return (
         <div className='projects container background-light-grey' ref={refs}>
             <div className='container-inner project-section-list'>
+            <div>
+                    <div className='section-title'>
+                        <h2>Professional Titles</h2>
+                    </div>
+                    <div className='project-post-card-list'>
+                        <Postcard
+                            title="Rocket Racing"
+                            description="A supersonic arcade racer that lets players drift, fly, and boost with their friends through an ever-growing selection of tracks."
+                            tags={[
+                                { text: "Unreal Engine 5", backgroundColor: "background-pastel-red" },
+                            ]}
+                            imageSrc={Images.RocketRacing}
+                            imageAlt="RocketRacing"
+                        />
+                    </div>
+                </div>
+
                 <div>
                     <div className='section-title'>
                         <h2>Team Projects</h2>
@@ -15,7 +32,7 @@ export const Projects = React.forwardRef((props, refs) => {
                     <div className='project-post-card-list'>
                         <Postcard
                             title="Dodge Brawl"
-                            description="Local competitive dodgeball game built with a custom C++ engine, where players battle to be the last person standing"
+                            description="Local competitive dodgeball game built with a custom C++ engine, where players battle to be the last person standing."
                             tags={[
                                 { text: "C++", backgroundColor: "background-pastel-teal" },
                                 { text: "OpenGL", backgroundColor: "background-pastel-purple" },

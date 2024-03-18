@@ -14,6 +14,18 @@ export const Resume = (props) => {
 
     const resumeSections = [
         {
+            title: 'Associate Game Programmer',
+            company: 'Heavy Iron Studios',
+            location: 'Manhattan Beach, CA',
+            date: 'Jan. 2024 - Present',
+            description: 'Incorporated gameplay mechanics into a vehicle-based Virtual Reality (VR) project using Unreal Engine 5, positioning it as a technical demonstration for potential game development clients.',
+            listItems: [
+                'Developed core VR player functionality to enable interaction with virtual vehicle controls and 3D user interface elements.',
+                'Reported asset-related problems to the art team to resolve visual fidelity and animation issues found during development.',
+                'Collaborated with the design team to gather requirements and create development road maps for new gameplay features.',
+            ]
+        },
+        {
             title: 'Gameplay Programmer Intern',
             company: 'Psyonix',
             location: 'San Diego, CA',
@@ -23,7 +35,6 @@ export const Resume = (props) => {
                 'Developed skilled AI utilizing behavior trees to compete against novice players, delivering an immersive experience.',
                 'Improved the player’s driving mechanics by implementing new features for the vehicle’s physics-based abilities.',
                 'Exposed game assets to user-generated content tools for the Unreal Editor for Fortnite.',
-                'Collaborated with the design team to gather requirements and create development road maps for new gameplay features.',
                 'Participated in playtesting sessions to provide feedback and identify bugs in gameplay mechanics.'
             ]
         },
