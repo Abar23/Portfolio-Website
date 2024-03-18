@@ -5,17 +5,18 @@ import { motion } from "framer-motion";
 
 export const MainPage = React.forwardRef((props, refs) => {
 
-    function scrollToElementInstantly(ref) {
-        window.scrollTo({
-            top: ref.current.offsetTop,
-            left: 0,
-            behavior: 'instant'
-        });
-
-        props.setElementScrollData({ element: null });
-    }
-
     useEffect(() => {
+
+        function scrollToElementInstantly(ref) {
+            window.scrollTo({
+                top: ref.current.offsetTop,
+                left: 0,
+                behavior: 'instant'
+            });
+    
+            props.setElementScrollData({ element: null });
+        }
+    
         const observer = new IntersectionObserver(props.callback, props.options);
 
         refs.forEach((ref) => {

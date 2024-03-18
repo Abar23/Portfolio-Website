@@ -9,7 +9,7 @@ const RayTracer = require('../Assets/Ray Trace Image.png');
 const SkeletalAnimation = require('../Assets/Animation Project.png');
 const RocketRacing = require('../Assets/Rocket Racing.jpg');
 
-export default {
+const Images = {
     MandelBuld, 
     DungeonsOfAvarice,
     ProfessionalPhoto,
@@ -21,3 +21,5 @@ export default {
     SkeletalAnimation,
     RocketRacing
 };
+
+export default Images;

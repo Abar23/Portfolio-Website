@@ -1,5 +1,4 @@
 import { React, useEffect } from 'react'
-import { ProjectImage } from "./ProjectImage";
 import { ProjectContentContainer } from "./ProjectContentContainer";
 import { Contact } from './Contact.js'
 import { Footer } from './Footer.js';
@@ -46,9 +45,8 @@ export const PortalMario = (props) => {
                     modules={[Pagination, Navigation]}
                     className="mySwiper"
                 >
-                    <SwiperSlide><img src={Images.PortalMario} /></SwiperSlide>
-                    <SwiperSlide><img src={Images.MandelBuld} /></SwiperSlide>
-                    <SwiperSlide><img src={Images.MandelBuld} /></SwiperSlide>
+                    <SwiperSlide><img src={Images.PortalMario} alt="PortalMario" /></SwiperSlide>
+                    <SwiperSlide><img src={Images.MandelBuld} alt="MandelBulb" /></SwiperSlide>
                 </Swiper>
 
                 <br />

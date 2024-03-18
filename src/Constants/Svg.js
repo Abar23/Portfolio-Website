@@ -518,7 +518,7 @@ class MonoGame extends React.Component {
     }
 }
 
-export default {
+const Svg = {
     OpengGl,
     CLanguage,
     CPlusPlus,
@@ -545,3 +545,5 @@ export default {
     IntelliJ,
     MonoGame
 };
+
+export default Svg;

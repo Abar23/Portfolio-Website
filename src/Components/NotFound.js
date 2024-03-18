@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useCallback } from 'react';
 import { useNavigate } from "react-router-dom";
 import '../Styles/NotFound.css';
 
@@ -6,9 +6,9 @@ export const NotFound = (props) => {
 
   const navigate = useNavigate();
 
-  const redirectToHome = () => {
+  const redirectToHome = useCallback(() => {
     navigate('/');
-  }
+  }, [navigate])
 
   useEffect(() => {
     props.setViewingResume(true);
@@ -27,7 +27,7 @@ export const NotFound = (props) => {
       window.document.body.style.overflow = 'auto';
       clearTimeout(redirectToHome);
     };
-  }, []);
+  }, [props, redirectToHome]);
 
   return (
     <div className='contact container background-light-black'>
