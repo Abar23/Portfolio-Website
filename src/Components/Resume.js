@@ -159,7 +159,7 @@ export const Resume = (props) => {
                                 <hr className='resume-info-section-line' />
                                 <div className='date-location-info'>
                                     <p>Redmond, Washington</p>
-                                    <p>Aug 2022 - Present</p>
+                                    <p>Aug 2022 - Aug 2024</p>
                                 </div>
                                 <p className='resume-info-section-description'>
                                     M.S. in Computer Science specializing in Computer Graphics
