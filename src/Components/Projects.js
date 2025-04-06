@@ -32,7 +32,7 @@ export const Projects = React.forwardRef((props, refs) => {
                     <div className='project-post-card-list'>
                         <Postcard
                             title="Dodge Brawl"
-                            description="Local competitive dodgeball game built with a custom C++ engine, where players battle to be the last person standing."
+                            description="A 2D competitive dodgeball game developed with a custom C++ engine, where players compete to be the last person standing."
                             tags={[
                                 { text: "C++", backgroundColor: "background-pastel-teal" },
                                 { text: "OpenGL", backgroundColor: "background-pastel-purple" },
@@ -45,7 +45,7 @@ export const Projects = React.forwardRef((props, refs) => {
 
                         <Postcard
                             title="Dungeons of Avarice"
-                            description="A co-operative roguelike that allows players to traverse procedurally generated dungeons while collecting deadly weapons, powerful magic spells, and valuable loot."
+                            description="A cooperative roguelike where players explore procedurally generated dungeons, gathering deadly weapons, powerful spells, and valuable loot"
                             tags={[
                                 { text: "C#", backgroundColor: "background-pastel-teal" },
                                 { text: "Unity", backgroundColor: "background-pastel-red" }
@@ -56,7 +56,7 @@ export const Projects = React.forwardRef((props, refs) => {
 
                         <Postcard
                             title="Portal Mario"
-                            description="A recreation of the classic Super Mario Bros. for the NES with some mechanics inspired by Portal. Not only can players jump on goombas and koopa troopas, but they can grab the portal gun to solve tricky puzzles and traverse the world in creative ways!"
+                            description="A reimagining of the classic Super Mario Bros. for the NES, featuring mechanics inspired by Portal. Players can not only jump on Goombas and Koopa Troopas but also use a portal gun to solve puzzles and navigate the world in innovative ways!"
                             tags={[
                                 { text: "C#", backgroundColor: "background-pastel-teal" },
                                 { text: "MonoGame", backgroundColor: "background-pastel-red" }
@@ -74,7 +74,7 @@ export const Projects = React.forwardRef((props, refs) => {
                     <div className='project-post-card-list'>
                         <Postcard
                             title="Skeletal Animation"
-                            description="Developed a 3D animation system within my custom game engine that is capable of interpolating between keyframes to animate complex models with a large number of bones."
+                            description="Created a 3D animation system in my custom game engine that interpolates between keyframes to animate complex models with numerous bones."
                             tags={[
                                 { text: "C++", backgroundColor: "background-pastel-teal" },
                                 { text: "OpenGL", backgroundColor: "background-pastel-purple" },
@@ -87,7 +87,7 @@ export const Projects = React.forwardRef((props, refs) => {
                         />
                         <Postcard
                             title="CPU Ray Tracer"
-                            description="Offline CPU ray tracer capable of rendering BRDF-based lighting that supports material properties including specular, transmission, shininess, refraction, and diffuse. It additionally supports arbitrary shaped lights and depth of field."
+                            description="Developed an offline CPU ray tracer that renders BRDF-based lighting, supporting material properties such as specular, transmission, shininess, refraction, and diffuse. It also accommodates arbitrarily shaped lights and depth of field effects."
                             tags={[
                                 { text: "C++", backgroundColor: "background-pastel-teal" },
                                 { text: "Assimp", backgroundColor: "background-pastel-orange" }
@@ -98,7 +98,7 @@ export const Projects = React.forwardRef((props, refs) => {
                         
                         <Postcard
                             title="Fractal Raymacher"
-                            description="Implemented WebGL fragment shaders that utilize raymarching and signed distance functions to generate 3D Mandelbulb fractals. Additional shaders exist for this project to showcase the power of raymarching."
+                            description="Implemented WebGL fragment shaders using raymarching and signed distance functions to generate 3D Mandelbulb fractals."
                             tags={[
                                 { text: "JavaScript", backgroundColor: "background-pastel-teal" },
                                 { text: "WebGL", backgroundColor: "background-pastel-purple" },
@@ -109,7 +109,7 @@ export const Projects = React.forwardRef((props, refs) => {
 
                         <Postcard
                             title="Boids Birds"
-                            description="Leveraged Boids algorithm and custom 2D animation system to create an interactive application that simulates the flocking behavior of birds observed in nature. Can be used with Google VR carboard glasses for a more immersive experience.                            "
+                            description="Utilized the Boids algorithm and a custom 2D animation system to develop an interactive application that simulates natural bird flocking behavior, with support for Google VR Cardboard glasses for an enhanced immersive experience."
                             tags={[
                                 { text: "JavaScript", backgroundColor: "background-pastel-teal" },
                                 { text: "WebGL", backgroundColor: "background-pastel-purple" },

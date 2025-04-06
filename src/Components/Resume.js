@@ -18,7 +18,7 @@ export const Resume = (props) => {
             company: 'Heavy Iron Studios',
             location: 'Manhattan Beach, CA',
             date: 'Jan. 2024 - Present',
-            description: 'Incorporated gameplay mechanics into a vehicle-based Virtual Reality (VR) project using Unreal Engine 5, positioning it as a technical demonstration for potential game development clients.',
+            description: 'Contribute to internal 3D game projects by developing and enhancing core gameplay systems, UI/UX elements, VR player mechanics, and animation features using Blueprints and C++ in Unreal Engine 5.',
             listItems: [
                 'Developed core VR player functionality to enable interaction with virtual vehicle controls and 3D user interface elements.',
                 'Reported asset-related problems to the art team to resolve visual fidelity and animation issues found during development.',
@@ -43,7 +43,7 @@ export const Resume = (props) => {
             company: 'JPMorgan Chase & Co.',
             location: 'Columbus, OH',
             date: 'Feb. 2020 - Apr. 2022',
-            description: 'Focused on implementing front-end and back-end solutions for the Community & Consumer Banking sector, enabling over 230,000 businesses to apply for payroll loans through the Paycheck Protection Program.',
+            description: 'Focused on implementing front-end and back-end solutions using Java and JavaScript for the Community & Consumer Banking sector, enabling over 230,000 businesses to apply for payroll loans through the Paycheck Protection Program.',
             listItems: [
                 'Utilized Spring and Apache Kafka to implement distributed, event-driven microservices.',
                 'Developed secure REST controllers that allowed web service calls to safely communicate with back-end servers.',
@@ -56,7 +56,7 @@ export const Resume = (props) => {
             company: 'JPMorgan Chase & Co.',
             location: 'Columbus, OH',
             date: 'June - Aug. 2019',
-            description: 'Responsible for prototyping an artificial intelligence system that utilized network traffic predict data transmission failures and determine network reliability patterns for internal file transfering tools.',
+            description: 'Responsible for prototyping an artificial intelligence system that utilized network traffic data to predict transmission failures and determine network reliability patterns for internal file transfering tools.',
             listItems: [
                 'Utilized AI models of IBM Watson Studio to generate inferences on internally produced data of MFT.',
                 'Deployed a python-based Flask microservice that hosted a public endpoint to create data sets used for training and data processing of AI models.',
@@ -69,7 +69,7 @@ export const Resume = (props) => {
             company: 'Ohio State University',
             location: 'Columbus, OH',
             date: 'Mar. – May 2018, Sept. – Dec. 2019',
-            description: 'Recreated doctors’ offices in virtual reality, allowing medical professionals to preview how new equipment would fit into their workspace before making a purchase. ',
+            description: 'Recreated doctors’ offices in virtual reality, allowing medical professionals to preview how new equipment would fit into their workspace.',
             listItems: [
                 'Simulated medical imaging equipment that allows users to take pictures and videos from a camera in the scene.',
                 'Utilized render texture targets to display back to the user the perspective of the camera.',
@@ -81,7 +81,7 @@ export const Resume = (props) => {
             company: 'GE Appliances',
             location: 'Louisville, KY',
             date: 'Aug. - Dec. 2017, May - Aug. 2018',
-            description: 'Developed firmware for the refrigeration and air conditioning product lines at one of the industry’s leading manufacturers of electronic appliances for homes and businesses.',
+            description: 'Developed C/C++ firmware for refrigeration and air conditioning products at a leading manufacturer of electronic appliances for homes and businesses.',
             listItems: [
                 'Utilized Test-Driven Development practices to ensure high-quality, maintainable, and reliable code.',
                 'Designed control algorithms for auger motors, cooling fans, and user interface LEDs in open and closed-loop configurations.',

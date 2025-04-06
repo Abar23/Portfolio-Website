@@ -12,11 +12,6 @@ export const Contact = React.forwardRef((props, refs) => {
                 <div className='section-title align-to-center'>
                     <h2>Contact Me</h2>
                 </div>
-                <div className='contact-description align-to-center'>
-                    <p className='center-text'>
-                        Need a programmer on your team for a game or web app? Please send me a message!
-                    </p>
-                </div>
                 <br />
                 <div className='align-to-center'>
                     <div className='contact-box'>
